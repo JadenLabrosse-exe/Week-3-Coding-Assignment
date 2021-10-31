@@ -1,0 +1,119 @@
+//Question 1
+ages = [3, 9, 23, 64, 2, 8, 28, 93];
+let lastIndex = ages.length-1;
+let firstIndex = 0;
+ages.push (7)
+console.log(ages[lastIndex]-ages[firstIndex]);
+
+var total = 0
+for (var i = 0; i < ages.length; i++) {
+    total += ages[i]
+}
+var average = total / ages.length;
+
+console.log(ages.length)
+console.log(average)
+
+//Question 2
+let names = ['Sam ', 'Tommy ', 'Tim ', 'Sally ', 'Buck ', 'Bob'];
+let namesCharTotal = 0 
+for (let name of names) {
+    namesCharTotal += name.length; 
+}
+console.log(namesCharTotal/names.length);
+
+let contactNames = "";
+for (let name of names) {
+    contactNames += name; 
+}
+
+console.log(contactNames);
+
+//Question 3
+//let lastIndex = variable.length-1;
+
+//Question 4
+//let firstIndex = 0;
+
+//Question 5
+let nameLengths = [];
+for (let index = 0; index < names.length; index++){
+  nameLengths[index] = names[index].length; 
+}
+
+console.log(nameLengths);
+
+//Question 6
+let totalNameLengths = 0;
+for (let nameLength of nameLengths){
+    totalNameLengths += nameLength;
+}
+console.log(totalNameLengths);
+
+//Question 7
+function concatenated(word, number){
+    let concatWord = "";
+    for (let i= 1; i<=number; i++){
+      concatWord +- word;
+    }
+    return concatWord;
+  }
+  
+//Question 8
+function fullName(firstName, lastName) {
+    console.log (firstName + ' ' + lastName)
+}
+fullName("Jaden", "LaBrosse");
+
+//Question 9
+function numberArray(array){
+    let sum =0
+    for (let element of array){
+        sum += element;
+    }
+    if (sum >100){
+        return true;
+    }
+    return false;
+  }
+  let sumHundred = [25, 25, 25, 26]
+  console.log(numberArray(sumHundred));
+
+//Question 10
+function averageArray(x) {
+let total = 0
+ 
+for (let element of x){
+     total += element;
+}
+return total/x.length;
+}    
+let x = [6, 2, 5, 4, 9, 5, 1,];
+console.log(averageArray(x));
+
+//Question 11
+function comparison(array1, array2){
+
+    let avgerageArray1 = finalArray(array1);
+  
+    let avgerageArray2 = finalArray(array2);
+  
+    return (avgerageArray1 > avgerageArray2);
+  }
+
+//Question 12
+function willBuyDrink(isHotOutside, moneyInPocket){
+    if(isHotOutside && (moneyInPocket > 10.50)){
+      return true;
+    }
+    return false;
+  }
+willBuyDrink()
+
+//Question 13
+function myFunction(favoriteSnack, favoriteMovie) {
+    console.log ("I cant wait to eat " + favoriteSnack + "while watching " + favoriteMovie)
+}
+myFunction("Skittles ", "Baby Driver")
+
+//my function tells you what my favorite snack is and what my favorite movie is
